@@ -9,7 +9,7 @@ export type UpdateContactOfListProps = {
   memberId: string;
   emailAddress?: string;
   fields?: Record<string, unknown>;
-  tags?: Array<string>;
+  tags?: { [key: string]: boolean };
   status?: "SUBSCRIBED" | "UNSUBSCRIBED" | "PENDING";
 };
 
